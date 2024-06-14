@@ -1,0 +1,56 @@
+--Usuario navega, e compra--
+
+127.0.0.1:6379> mset id_usuario: 1
+OK
+127.0.0.1:6379> mset navegação: 1
+OK
+127.0.0.1:6379> mset produtos: chinelo
+OK
+127.0.0.1:6379> append produtos: ,camisa,jeans,oculos
+(integer) 27
+127.0.0.1:6379> mget produtos:
+[
+    "chinelo,camisa,jeans,oculos"
+]
+127.0.0.1:6379> mset carrinho: 1
+OK
+127.0.0.1:6379> del carrinho: 1
+(integer) 1
+127.0.0.1:6379> append carrinho: chinelo,camisa,jeans
+(integer) 27
+127.0.0.1:6379> mget carrinho:
+[
+    "chinelo,camisa,jeans"
+]
+127.0.0.1:6379> set finalizar: 1
+OK
+
+
+--Usuario navega, e sai do site--
+
+
+
+127.0.0.1:6379> mset id_usuario: 2
+OK
+127.0.0.1:6379> mset navegação: 1
+OK
+127.0.0.1:6379> mset produtos: chinelo
+OK
+127.0.0.1:6379> append produtos: ,camisa,jeans,oculos
+(integer) 27
+127.0.0.1:6379> mget produtos:
+[
+    "chinelo,camisa,jeans,oculos"
+]
+127.0.0.1:6379> mset carrinho: 1
+OK
+127.0.0.1:6379> del carrinho: 1
+(integer) 1
+127.0.0.1:6379> append carrinho: chinelo,camisa,jeans
+(integer) 27
+127.0.0.1:6379> mget carrinho:
+[
+    "chinelo,camisa,jeans"
+]
+127.0.0.1:6379> del navegação:
+(integer) 1
