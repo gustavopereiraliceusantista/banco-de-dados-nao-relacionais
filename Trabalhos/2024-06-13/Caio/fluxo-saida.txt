@@ -1,0 +1,25 @@
+use fluxoSaida
+
+db.createColection("entrada");
+
+db.entrada.insertOne({"id_usuario": ObjectID()});
+
+
+db.createCollection("navegacao");
+
+db.navegacao.insertOne({"produto": "tenis de corrida", "valor": 225});
+
+db.navegacao.insertOne({"produto": "3 pares meia cano alto", "valor": 89});
+
+db.navegacao.insertOne({"produto": "camiseta dry fit", "valor": 65});
+
+db.navegacao.insertOne({"produto": "camisa regata ardidas", "valor": 79}); 
+
+
+db.createColection("carrinho");
+
+db.carrinho.insertOne({"produto": "3 pares meia cano alto", "valor": 89});
+
+db.carrinho.insertOne({"produto": "tenis de corrida", "valor": 225});
+
+db.carrinho.insertOne({"produto": "camisa regata ardidas", "valor": 79});

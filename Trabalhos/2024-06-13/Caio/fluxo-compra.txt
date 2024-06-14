@@ -1,0 +1,25 @@
+use fluxoCompra
+
+db.createColection("entrada");
+
+db.entrada.insertOne({"id_usuario": ObjectID()});
+
+
+db.createCollection("navegacao");
+
+db.navegacao.insertOne({"produto": "chuteira", "valor": 199});
+
+db.navegacao.insertOne({"produto": "bola de futebol", "valor": 125});
+
+db.navegacao.insertOne({"produto": "bola de basquete", "valor": 119});
+
+db.navegacao.insertOne({"produto": "tenis de basquete", "valor": 379});
+
+
+db.createColection("carrinho");
+
+db.carrinho.insertOne({"produto": "chuteira", "valor": 199});
+
+db.carrinho.insertOne({"produto": "bola de basquete", "valor": 119});
+
+db.carrinho.insertOne({"produto": "tenis de basquete", "valor": 379});
