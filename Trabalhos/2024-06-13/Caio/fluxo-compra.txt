@@ -18,6 +18,8 @@ db.navegacao.insertOne({"id_usuario": ObjectID(975e5fcd-a19b-4cdc-a3bf-3a3579127
 
 db.createColection("carrinho");
 
+
+
 db.carrinho.insertOne({"id_usuario": ObjectID(975e5fcd-a19b-4cdc-a3bf-3a3579127ef6), "produto": "chuteira", "valor": 199});
 
 db.carrinho.insertOne({"id_usuario": ObjectID(975e5fcd-a19b-4cdc-a3bf-3a3579127ef6), "produto": "bola de basquete", "valor": 119});
