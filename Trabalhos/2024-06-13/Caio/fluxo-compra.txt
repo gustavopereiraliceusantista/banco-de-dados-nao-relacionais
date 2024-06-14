@@ -1,25 +1,26 @@
 use fluxoCompra
 
-db.createColection("entrada");
+db.createCollection("entrada");
 
-db.entrada.insertOne({"id_usuario": ObjectID()});
+db.entrada.insertOne({"id_usuario": ObjectID(975e5fcd-a19b-4cdc-a3bf-3a3579127ef6)});
 
 
 db.createCollection("navegacao");
 
-db.navegacao.insertOne({"produto": "chuteira", "valor": 199});
+db.navegacao.insertOne({"id_usuario": ObjectID(975e5fcd-a19b-4cdc-a3bf-3a3579127ef6), "produto": "chuteira", "valor": 199});
 
-db.navegacao.insertOne({"produto": "bola de futebol", "valor": 125});
+db.navegacao.insertOne({"id_usuario": ObjectID(975e5fcd-a19b-4cdc-a3bf-3a3579127ef6), "produto": "bola de futebol", "valor": 125});
 
-db.navegacao.insertOne({"produto": "bola de basquete", "valor": 119});
+db.navegacao.insertOne({"id_usuario": ObjectID(975e5fcd-a19b-4cdc-a3bf-3a3579127ef6), "produto": "bola de basquete", "valor": 119});
 
-db.navegacao.insertOne({"produto": "tenis de basquete", "valor": 379});
+db.navegacao.insertOne({"id_usuario": ObjectID(975e5fcd-a19b-4cdc-a3bf-3a3579127ef6), "produto": "tenis de basquete", "valor": 379});
 
 
 db.createColection("carrinho");
 
-db.carrinho.insertOne({"produto": "chuteira", "valor": 199});
+db.carrinho.insertOne({"id_usuario": ObjectID(975e5fcd-a19b-4cdc-a3bf-3a3579127ef6), "produto": "chuteira", "valor": 199});
 
-db.carrinho.insertOne({"produto": "bola de basquete", "valor": 119});
+db.carrinho.insertOne({"id_usuario": ObjectID(975e5fcd-a19b-4cdc-a3bf-3a3579127ef6), "produto": "bola de basquete", "valor": 119});
 
-db.carrinho.insertOne({"produto": "tenis de basquete", "valor": 379});
+db.carrinho.insertOne({"id_usuario": ObjectID(975e5fcd-a19b-4cdc-a3bf-3a3579127ef6), "produto": "tenis de basquete", "valor": 379});
+
