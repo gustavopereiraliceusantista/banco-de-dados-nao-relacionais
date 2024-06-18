@@ -1,0 +1,25 @@
+use fluxoSaida
+
+db.createCollection("entrada");
+
+db.entrada.insertOne({"id_usuario": ObjectID(0ee4401c-a418-421d-bc0b-1e4373f8ec3f)});
+
+
+db.createCollection("navegacao");
+
+db.navegacao.insertOne({"id_usuario": ObjectID(0ee4401c-a418-421d-bc0b-1e4373f8ec3f), "produto": "tenis de corrida", "valor": 225});
+
+db.navegacao.insertOne({"id_usuario": ObjectID(0ee4401c-a418-421d-bc0b-1e4373f8ec3f), "produto": "3 pares meia cano alto", "valor": 89});
+
+db.navegacao.insertOne({"id_usuario": ObjectID(0ee4401c-a418-421d-bc0b-1e4373f8ec3f), "produto": "camiseta dry fit", "valor": 65});
+
+db.navegacao.insertOne({"id_usuario": ObjectID(0ee4401c-a418-421d-bc0b-1e4373f8ec3f), "produto": "camisa regata ardidas", "valor": 79}); 
+
+
+db.createCollection("carrinho");
+
+db.carrinho.insertOne({"id_usuario": ObjectID(0ee4401c-a418-421d-bc0b-1e4373f8ec3f), "produto": "3 pares meia cano alto", "valor": 89});
+
+db.carrinho.insertOne({"id_usuario": ObjectID(0ee4401c-a418-421d-bc0b-1e4373f8ec3f), "produto": "tenis de corrida", "valor": 225});
+
+db.carrinho.insertOne({"id_usuario": ObjectID(0ee4401c-a418-421d-bc0b-1e4373f8ec3f), "produto": "camisa regata ardidas", "valor": 79});
