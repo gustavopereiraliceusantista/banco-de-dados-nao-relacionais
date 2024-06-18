@@ -1,0 +1,45 @@
+//MongoDb
+
+lojaVirtual> db.createCollection("produto")
+
+lojaVirtual> db.produto.insertOne({"nome": "teclado", "valor": 300});
+lojaVirtual> db.produto.insertOne({"nome": "mouse", "valor": 250});
+lojaVirtual> db.produto.insertOne({"nome": "mousepad", "valor": 20});
+lojaVirtual> db.produto.insertOne({"nome": "monitor", "valor": 1500});
+
+
+lojaVirtual> db.createCollection("carrinho")
+
+lojaVirtual> db.carrinho.insertOne({"produto": "teclado", "valor": 300});
+lojaVirtual> db.carrinho.insertOne({"produto": "mouse", "valor": 250});
+lojaVirtual> db.carrinho.insertOne({"produto": "mousepad", "valor": 20});
+
+
+lojaVirtual> db.createCollection("saida")
+
+lojaVirtual> db.saida.insertOne({"produto": "teclado", "valor": 300});
+lojaVirtual> db.saida.insertOne({"produto": "mouse", "valor": 250});
+lojaVirtual> db.saida.insertOne({"produto": "mousepad", "valor": 20});
+
+//JSON
+
+{
+  "produto": [
+    {"produto1": "teclado", "valor": 300},
+    {"produto2": "mouse", "valor": 250},
+    {"produto3": "mousepad", "valor": 20},
+    {"produto4": "monitor", "valor": 1500}
+  ],
+
+  "carrinho": [
+    {"produto": "teclado", "valor": 300},
+    {"produto": "mouse", "valor": 250},
+    {"produto": "mousepad", "valor": 20}
+  ],
+
+  "saida": [
+    {"produto": "teclado", "valor": 300},
+    {"produto": "mouse", "valor": 250},
+    {"produto": "mousepad", "valor": 20}
+  ]
+}
