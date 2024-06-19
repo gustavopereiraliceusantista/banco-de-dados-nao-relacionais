@@ -1,0 +1,24 @@
+use caminho1
+
+
+db.createCollection("entradaUsuario")
+db.entradaUsuario.insertOne({"id_usuario":ObjectID(19312bc2-16da-4ff0-a296-a22b19a3d8b5)})
+
+
+db.createCollection("generos")
+
+db.generos.insertOne({"id_usuario":ObjectID(19312bc2-16da-4ff0-a296-a22b19a3d8b5),"genero" : "rock"})
+db.generos.insertOne({"id_usuario":ObjectID(19312bc2-16da-4ff0-a296-a22b19a3d8b5),"genero" : "heavyMetal"})
+
+
+db.createCollection("rock")
+db.rock.insertOne({"id_usuario":ObjectID(19312bc2-16da-4ff0-a296-a22b19a3d8b5),"ironMaden" : "Run to The Hills"})
+db.rock.insertOne({"id_usuario":ObjectID(19312bc2-16da-4ff0-a296-a22b19a3d8b5),"ironMaden" : "the Clansman"})
+db.rock.insertOne({"id_usuario":ObjectID(19312bc2-16da-4ff0-a296-a22b19a3d8b5),"ironMaden" :"Afraid to Shoot Strangers"})
+
+db.createCollection("heavyMetal")
+db.heavyMetal.insertOne({"id_usuario":ObjectID(19312bc2-16da-4ff0-a296-a22b19a3d8b5),"Sepultura" : "Inner Self" })
+db.heavyMetal.insertOne({"id_usuario":ObjectID(19312bc2-16da-4ff0-a296-a22b19a3d8b5),"Sepultura" : "Biotech is Godzilla" })
+
+
+

@@ -1,0 +1,25 @@
+use caminho2
+
+
+db.createCollection("entradaUsuario")
+db.entradaUsuario.insertOne({"id_usuario":ObjectID(19312bc2-16da-4ff0-a296-a22b19a3d8b5)})
+
+
+db.createCollection("generos")
+
+db.generos.insertOne({"id_usuario":ObjectID(19312bc2-16da-4ff0-a296-a22b19a3d8b5),"genero" : "rock"})
+db.generos.insertOne({"id_usuario":ObjectID(19312bc2-16da-4ff0-a296-a22b19a3d8b5),"genero" : "pagode"})
+db.generos.insertOne({"id_usuario":ObjectID(19312bc2-16da-4ff0-a296-a22b19a3d8b5),"genero" : "samba"})
+
+
+db.createCollection("rock")
+
+db.createCollection("pagode")
+
+
+db.createCollection("samba")
+db.samba.insertOne({"id_usuario":ObjectID(19312bc2-16da-4ff0-a296-a22b19a3d8b5),"Originais do Samba" :"do Lado Direito, da Rua Direita" })
+db.samba.insertOne({"id_usuario":ObjectID(19312bc2-16da-4ff0-a296-a22b19a3d8b5),"Originais do Samba" :"La se vão meus anéis"})
+db.samba.insertOne({"id_usuario":ObjectID(19312bc2-16da-4ff0-a296-a22b19a3d8b5),"Originais do Samba" :"do Lado Direito, da Rua Direita" })
+db.samba.insertOne({"id_usuario":ObjectID(19312bc2-16da-4ff0-a296-a22b19a3d8b5),"Originais do Samba" :"O Assassinato do Camarão"})
+  
